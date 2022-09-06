@@ -1,10 +1,8 @@
-import type { User } from "./types";
-
 import { UserContext } from "./hooks/useUser";
 
 import UserProfileButton from "./UserProfileButton";
 
-const dummyUser: User = {
+const dummyUser = {
     id: 1,
     name: "John Doe"
 }

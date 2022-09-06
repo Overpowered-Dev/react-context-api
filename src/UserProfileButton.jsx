@@ -3,7 +3,7 @@ import { useState } from "react";
 import UserProfile from "./UserProfile";
 
 function UserProfileButton() {
-    const [showProfile, setShowProfile] = useState<boolean>(false);
+    const [showProfile, setShowProfile] = useState(false);
 
     return (
         <div>

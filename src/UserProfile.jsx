@@ -1,9 +1,7 @@
-import type { User } from "./types";
-
 import { useUser } from "./hooks/useUser";
 
 function UserProfile() {
-    const user: User | null = useUser();
+    const user = useUser();
 
     if (!user) {
         return (
