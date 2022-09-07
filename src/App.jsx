@@ -1,5 +1,3 @@
-import { UserContext } from "./hooks/useUser";
-
 import UserProfileButton from "./UserProfileButton";
 
 const dummyUser = {
@@ -9,9 +7,9 @@ const dummyUser = {
 
 function App() {
     return (
-        <UserContext.Provider value={dummyUser}>
-            <UserProfileButton />
-        </UserContext.Provider>
+        <>
+            <UserProfileButton user={dummyUser} />
+        </>
     );
 }
 

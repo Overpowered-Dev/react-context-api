@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import UserProfile from "./UserProfile";
 
-function UserProfileButton() {
+function UserProfileButton({ user }) {
     const [showProfile, setShowProfile] = useState(false);
 
     return (
@@ -11,7 +11,7 @@ function UserProfileButton() {
                 {showProfile ? "Hide" : "Show"} Profile
             </button>
 
-            {showProfile && <UserProfile />}
+            {showProfile && <UserProfile user={user} />}
         </div>
     );
 }
