@@ -1,7 +1,7 @@
 import { useUser, UserContext } from "./hooks/useUser";
 
 function UserProfile() {
-    // Solution #1 to consumer a context's value
+    // Solution #1 to consume a context's value
     const user = useUser();
 
     if (!user) {
@@ -18,7 +18,7 @@ function UserProfile() {
         </div>
     );
 
-    // Solution #2 to consumer a context's value
+    // Solution #2 to consume a context's value
     // return (
     //     <UserContext.Consumer>
     //         {user => {
