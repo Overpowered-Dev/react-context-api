@@ -7,7 +7,7 @@ export default function ChildD() {
 
     return (
         <div style={styles.child}>
-            <h1 style={styles.header}>Child D</h1>
+            <h2 style={styles.header}>Child D</h2>
 
             <p>Component Props: none</p>
 

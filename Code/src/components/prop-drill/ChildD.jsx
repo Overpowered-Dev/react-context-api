@@ -3,7 +3,7 @@ import styles from "../../styles";
 export default function ChildD({ user }) {
     return (
         <div style={styles.child}>
-            <h1 style={styles.header}>Child D</h1>
+            <h2 style={styles.header}>Child D</h2>
 
             <p>Component Props: {"{ user }"}</p>
 

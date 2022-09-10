@@ -1,36 +1,29 @@
 import { UserContext } from "./hooks/useUser";
-
 import { ChildA as PropDrillChildA } from "./components/prop-drill/ChildA";
 import { ChildA as ContextChildA } from "./components/context/ChildA";
 
 import styles from "./styles";
 
-const propDrilledUser = {
+const user = {
     id: 1,
-    name: "Mr. Prop Drilled",
+    name: "Mr. Tommy Smith",
     accessToken: "2e3f2b64-6e00-4d3f-9f6c-a0131498009c"
-}
-
-const contextUser = {
-    id: 2,
-    name: "Mr. Context",
-    accessToken: "492d540c-c4c0-465e-9d34-a1b5f7d94951"
 }
 
 function App() {
     return (
         <div style={styles.container}>
             <div style={styles.row}>
-                <div style={{ ...styles.column, backgroundColor: "red" }}>
+                <div style={{ ...styles.column, backgroundColor: "#FF0000" }}>
                     <h1>Prop Drilling</h1>
 
-                    <PropDrillChildA user={propDrilledUser} />
+                    <PropDrillChildA user={user} />
                 </div>
 
-                <div style={{ ...styles.column, backgroundColor: "green" }}>
-                    <h1>Context API</h1>
+                <div style={{ ...styles.column, backgroundColor: "#35ff00" }}>
+                    <h1>React's Context API</h1>
 
-                    <UserContext.Provider value={contextUser}>
+                    <UserContext.Provider value={user}>
                         <ContextChildA />
                     </UserContext.Provider>
                 </div>

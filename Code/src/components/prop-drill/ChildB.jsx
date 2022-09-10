@@ -4,7 +4,7 @@ import ChildC from "./ChildC";
 export default function ChildB({ user }) {
     return (
         <div style={styles.child}>
-            <h1 style={styles.header}>Child B</h1>
+            <h2 style={styles.header}>Child B</h2>
 
             <p>Component Props: {"{ user }"}</p>
 

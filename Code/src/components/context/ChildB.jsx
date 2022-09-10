@@ -1,14 +1,14 @@
 import styles from "../../styles";
-import ChildD from "./ChildD";
+import ChildC from "./ChildC";
 
-export default function ChildC() {
+export default function ChildB() {
     return (
         <div style={styles.child}>
-            <h1 style={styles.header}>Child C</h1>
+            <h2 style={styles.header}>Child B</h2>
 
             <p>Component Props: none</p>
 
-            <ChildD />
+            <ChildC />
         </div>
     );
 }
