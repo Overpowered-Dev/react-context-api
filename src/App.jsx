@@ -17,15 +17,23 @@ function App() {
                 <div style={{ ...styles.column, backgroundColor: "#FF0000" }}>
                     <h1>Prop Drilling</h1>
 
-                    <PropDrillChildA user={user} />
+                    <div style={styles.child}>
+                        <h2 style={styles.header}>App</h2>
+
+                        <PropDrillChildA user={user} />
+                    </div>
                 </div>
 
                 <div style={{ ...styles.column, backgroundColor: "#35ff00" }}>
                     <h1>React's Context API</h1>
 
-                    <UserContext.Provider value={user}>
-                        <ContextChildA />
-                    </UserContext.Provider>
+                    <div style={styles.child}>
+                        <h2 style={styles.header}>App</h2>
+
+                        <UserContext.Provider value={user}>
+                            <ContextChildA />
+                        </UserContext.Provider>
+                    </div>
                 </div>
             </div>
         </div>
